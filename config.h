@@ -20,17 +20,18 @@ static const char col_red[]        = "#dc143c"; // crimson red
 static const char col_green[]        = "#00ff7f"; // spring green
 static const char col_blue[]        = "#dc143c"; // dwm default cyan
 static const char col_yellow[]        = "#ffff00"; // crimson red
+static const char col_black[]        = "#000000"; // uhh... black?
 static const unsigned int baralpha = 220;
 static const unsigned int borderalpha = 110;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, "#000000", col_gray2 },
-	[SchemeSel]  = { col_gray4, "#000000", col_green },
-	[SchemeStatus]  = { col_gray3, "#000000",  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
-	[SchemeTagsSel]  = { col_gray3, col_green,  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
-	[SchemeTagsNorm]  = { col_gray4, "#000000",  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-	[SchemeInfoSel]  = { col_gray3, "#000000",  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
-	[SchemeInfoNorm]  = { col_gray4, "#000000",  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
+	[SchemeNorm] = { col_gray3, col_black, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_black, col_green },
+	[SchemeStatus]  = { col_gray3, col_black,  col_black  }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeTagsSel]  = { col_black, col_green,  col_black  }, // Tagbar left selected {text,background,not used but cannot be empty}
+	[SchemeTagsNorm]  = { col_gray4, col_black,  col_black  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+	[SchemeInfoSel]  = { col_gray3, col_black,  col_black  }, // infobar middle  selected {text,background,not used but cannot be empty}
+	[SchemeInfoNorm]  = { col_gray4, col_black,  col_black  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 static const unsigned int alphas[][3]      = {
     /*               fg      bg        border*/
